@@ -1,0 +1,12 @@
+header{
+
+}
+.content{
+    display: flex;
+}
+nav{
+    flex:30%;
+}
+section{
+    flex:70%;
+}

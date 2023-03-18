@@ -1,0 +1,62 @@
+@import "reset.css";
+
+/* 리셋 시험용 코드 */
+/* body>div>h1{
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+} */
+
+img {
+    padding: 10px 0px 10px 0px;
+}
+p{
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section {
+    display:flex;
+    /* flex-wrap: nowrap; */
+}
+nav{
+    flex:30%;
+}
+
+.header > h1{
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+.nav {
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    height:auto; 
+}
+.nav a{
+    text-decoration-line:none;
+}
+.nav ol {
+    line-height:30px;
+}
+.content{
+    padding: 30px 0px 0px 30px;
+    height:100%;
+    flex:70%;
+}
+.content > h2{
+    margin: 0px;
+    /* font-size: 30px; */
+    /* font-weight: 800; */
+}
+.content > p:nth-of-type(1){
+    font-size: 16px;
+}
+.content > p:nth-of-type(4){
+    font-weight:bold;
+}
