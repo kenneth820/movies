@@ -1,0 +1,380 @@
+@import "reset.css";
+/* pc 영역 */
+@media all and (min-width: 1024px) {
+    a{
+        text-decoration-line:none;
+    }
+    img {
+        padding: 10px 0px 10px 0px;
+    }
+    p{
+        margin: 0px;
+        padding: 10px 0px 10px 0px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    ol {
+        line-height:24px;
+    }
+    header{
+        background-color:skyblue;
+    }
+    
+    header > h1{
+        margin: 0;
+        padding: 20px 0px 20px 0px;
+        font-size: 50px;
+        /* font-weight: 900; */
+        text-align: center;
+    }
+    .nav_main > ul{
+        padding-inline-start: 0;
+    }
+    .nav_main ul li{
+        list-style: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu-item {
+        background-color: gold;
+        flex-grow: 1;
+        transition: 0.5s;
+    }
+    .menu-item:hover {
+        background-color: crimson;
+        flex-grow: 1.2;
+    }
+    .menu-link {
+        /* block이면 마우스 클릭영역이 더 커짐, a태그는 inline으로서 클릭영역이 콘텐츠에 한정됨*/
+        display: block; 
+        padding: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #555;
+        text-decoration: none;
+        text-align: center;
+    }
+    .menu-link:hover {
+        color: white;
+    }
+    .section {
+        display:flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+        flex-basis: auto;
+    }
+    .nav_left {
+        background-color: peachpuff;
+        /* padding-top: 30px; */
+        padding: 20px 10px 0px 0px;
+        font-size: 16px;
+        font-weight:900;
+        height:auto; 
+        /* flex: flex-grow(0) 
+            flex-shrink(1) flex-basis(auto) */
+        /* flex: 1 1 30%; */
+        /* 크기고정  flex:none*/
+        flex:0 0 auto;
+    }
+    .nav_left li{
+        /* 요소 너비가 내용 최대치에 좌우됨 */
+        /* width: max-content; */
+    }
+    .content{
+        background-color:palegreen;
+        padding: 20px 0px 0px 20px;
+        height:100%;
+        overflow: auto;
+        /* overflow: scroll; */
+        flex:70%;
+    }
+    .content > h2{
+        margin: 0px;
+        /* font-size: 30px; */
+        /* font-weight: 800; */
+    }
+    
+    .list-container{
+        list-style: none;
+        /* background-color:green; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        padding-inline-start: 0px;
+    }
+    .list-item-movies{
+        margin: 5px 5px;
+    }
+    
+    .mv-img {
+        width: 200px;
+        /* height: 300px; */
+    }
+    .mv-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .content > p:nth-of-type(1){
+        font-size: 16px;
+    }
+    .content > p:nth-of-type(4){
+        font-weight:bold;
+    }
+    footer{
+        background-color: khaki;
+        margin-top: auto;
+        padding: 10px 0 10px 0;
+    }
+}
+/* tablet 영역 */
+@media all and (max-width: 1023px) {
+    a{
+        text-decoration-line:none;
+    }
+    img {
+        padding: 8px 0px;
+    }
+    p{
+        margin: 0px;
+        padding: 8px 0px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    ol {
+        line-height:22px;
+    }
+    header{
+        background-color:olivedrab;
+    }
+    
+    header > h1{
+        margin: 0;
+        padding: 18px 0px ;
+        font-size: 40px;
+        text-align: center;
+    }
+    .nav_main > ul{
+        padding-inline-start: 0;
+    }
+    .nav_main ul li{
+        list-style: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu-item {
+        background-color: gold;
+        flex-grow: 1;
+        transition: 0.5s;
+    }
+    .menu-item:hover {
+        background-color: crimson;
+        flex-grow: 1.2;
+    }
+    .menu-link {
+        /* block이면 마우스 클릭영역이 더 커짐, a태그는 inline으로서 클릭영역이 콘텐츠에 한정됨*/
+        display: block; 
+        padding: 14px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #555;
+        text-decoration: none;
+        text-align: center;
+    }
+    .menu-link:hover {
+        color: white;
+    }
+    .section {
+        display:flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+        flex-basis: auto;
+    }
+    .nav_left {
+        background-color: peachpuff;
+        /* padding-top: 30px; */
+        padding: 18px 8px 0px 0px;
+        font-size: 14px;
+        font-weight:800;
+        height:auto; 
+        /* flex: flex-grow(0) 
+            flex-shrink(1) flex-basis(auto) */
+        /* flex: 1 1 30%; */
+        /* 크기고정  flex:none*/
+        flex:0 0 auto;
+    }
+    .content{
+        background-color:palegreen;
+        padding: 18px 0px 0px 18px;
+        height:100%;
+        overflow: auto;
+        /* overflow: scroll; */
+        flex:70%;
+    }
+    .content > h2{
+        margin: 0px;
+    }
+    .list-container{
+        list-style: none;
+        /* background-color:green; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        padding-inline-start: 0px;
+    }
+    .list-item-movies{
+        margin: 4px 4px;
+    }
+    
+    .mv-img {
+        width: 180px;
+    }
+    .mv-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .content > p:nth-of-type(1){
+        font-size: 14px;
+    }
+    .content > p:nth-of-type(4){
+        font-weight:bold;
+    }
+    footer{
+        background-color: khaki;
+        margin-top: auto;
+        padding: 8px 0px;
+    }
+}
+/* mobile 영역 */
+@media all and (max-width: 767px) {
+    a{
+        text-decoration-line:none;
+    }
+    img {
+        padding: 6px 0px;
+    }
+    p{
+        margin: 0px;
+        padding: 6px 0px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    ol {
+        line-height:18px;
+    }
+    header{
+        background-color:goldenrod;
+    }
+    
+    header > h1{
+        margin: 0;
+        padding: 16px 0px;
+        font-size: 26px;
+        /* font-weight: 900; */
+        text-align: center;
+    }
+    .nav_main > ul{
+        padding-inline-start: 0;
+    }
+    .nav_main ul li{
+        list-style: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu-item {
+        background-color: gold;
+        flex-grow: 1;
+        transition: 0.5s;
+    }
+    .menu-item:hover {
+        background-color: crimson;
+        flex-grow: 1.2;
+    }
+    .menu-link {
+        /* block이면 마우스 클릭영역이 더 커짐, a태그는 inline으로서 클릭영역이 콘텐츠에 한정됨*/
+        display: block; 
+        padding: 12px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #555;
+        text-decoration: none;
+        text-align: center;
+    }
+    .menu-link:hover {
+        color: white;
+    }
+    .section {
+        display:flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+        flex-basis: auto;
+    }
+    .nav_left {
+        background-color: peachpuff;
+        /* padding-top: 30px; */
+        padding: 16px 10px 0px 0px;
+        font-size: 12px;
+        font-weight:700;
+        height:auto; 
+        /* flex: flex-grow(0) 
+            flex-shrink(1) flex-basis(auto) */
+        /* flex: 1 1 30%; */
+        /* 크기고정  flex:none*/
+        flex:0 0 auto;
+        /* mobile */
+        display: none;
+    }
+    .nav_left li{
+        /* 요소 너비가 내용 최대치에 좌우됨 */
+        /* width: max-content; */
+    }
+    .content{
+        background-color:palegreen;
+        padding: 16px 0px 0px 16px;
+        height:100%;
+        overflow: auto;
+        /* overflow: scroll; */
+        flex:70%;
+    }
+    .content > h2{
+        margin: 0px;
+    }
+    
+    .list-container{
+        list-style: none;
+        /* background-color:green; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: left;
+        padding-inline-start: 0px;
+    }
+    .list-item-movies{
+        margin: 3px 3px;
+    }    
+    .mv-img {
+        width: 160px;
+    }
+    .mv-title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .content > p:nth-of-type(1){
+        font-size: 12px;
+    }
+    .content > p:nth-of-type(4){
+        font-weight:bold;
+    }
+    footer{
+        background-color: khaki;
+        margin-top: auto;
+        padding: 6px 0;
+    }
+}
